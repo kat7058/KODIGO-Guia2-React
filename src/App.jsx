@@ -7,8 +7,11 @@ function App() {
 
   return (
     <div>
-   <Navbar name="Jovenes"/>
-   <ListaRickandMorty/>
+          <Navbar name="Jovenes"/>
+          <br></br>
+          <div className='container'>
+          <ListaRickandMorty/>
+          </div>
     </div>
   )
 }
