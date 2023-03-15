@@ -8,10 +8,6 @@ function App() {
   return (
     <div>
           <Navbar name="Jovenes"/>
-          <br></br>
-          <div className='container'>
-          <ListaRickandMorty/>
-          </div>
     </div>
   )
 }

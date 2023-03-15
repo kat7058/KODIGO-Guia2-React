@@ -20,19 +20,19 @@ export default function ListaRickandMorty(){
     console.log(rickandmorty);
 
     return(
-        <div>
-      <h1>Lista de personajes de la serie Rick and Morty</h1>
-      <br></br>
-        <div className="row">
-            {
-               rickandmorty.map((personajes, indice) => {
-                return <div className='col-md-4 mt-4'>
-                           <Tarjeta key={indice} {...personajes}/>
-                       </div>
-               })
-            }
-        </div>
-        </div>
+    <div className='container'>
+        <h1>Lista de personajes de la serie Rick and Morty</h1>
+        <br></br>
+            <div className="row">
+                {
+                rickandmorty.map((personajes, indice) => {
+                    return <div className='col-md-4 mt-4'>
+                            <Tarjeta key={indice} {...personajes}/>
+                        </div>
+                })
+                }
+            </div>
+   </div>
   
 
     )
