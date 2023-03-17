@@ -21,7 +21,7 @@ export default function ListaRickandMorty(){
 
     return(
     <div className='container'>
-        <h1>Lista de personajes de la serie Rick and Morty</h1>
+        <h1 className="text-center mt-4">Lista de personajes de la serie Rick and Morty</h1>
         <br></br>
             <div className="row">
                 {
