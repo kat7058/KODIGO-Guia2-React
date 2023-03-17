@@ -29,7 +29,7 @@ export default function Tarjeta(props){
             <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">{rickandmorty.name}</h5>
-                    <img src={rickandmorty.image} alt=""/>
+                    <img src={rickandmorty.image} className="img-fluid" alt=""/>
                     <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target={idModal}>
                     ver mas info
                     </button>

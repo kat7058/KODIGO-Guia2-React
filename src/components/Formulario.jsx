@@ -2,14 +2,15 @@ import React, { useState } from 'react'
 
 export default function Formulario() {
      /** estado para obtener informacion del personaje en base a su nombre */
-     const [personaje, setPersonaje] = useState({});
+     const [personaje, setPersonaje] = useState([]);
 
-     const [nombre, setNombre] = useState("");
+     const [nombre, setNombre] = useState({});
 
      const obtenerPersonajebyName = async () => { 
-        const respuesta = await fetch(`https://rickandmortyapi.com/api/character/${nombre}`);
+        const respuesta = await fetch(`https://rickandmortyapi.com/api/character/1,183`);
         const datos = await respuesta.json();
         setPersonaje(datos);
+        console.log(datos);
      }
      
      const handleName = (e) => {
@@ -23,7 +24,7 @@ export default function Formulario() {
 
     }
 
-    console.log(personaje);
+    //console.log(personaje);
 
   return (
     <div className='container'>
@@ -32,7 +33,13 @@ export default function Formulario() {
             <input type="text" placeholder='ingresa el personaje' className='form-control' onChange={handleName}/><br></br>
             <button className='btn btn-dark' type='submit'>Buscar personaje</button>
         </form>
-        <h2>{personaje.name}</h2>
+        {
+                personaje.map((personaje, indice) => {
+                    return <div key={indice}>
+                            <h2>{personaje.name}</h2>
+                        </div>
+                })
+                }
     </div>
   )
 }
