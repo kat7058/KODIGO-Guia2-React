@@ -4,7 +4,7 @@ export default function Formulario() {
      /** estado para obtener informacion del personaje en base a su nombre */
      const [personaje, setPersonaje] = useState([]);
 
-     const [nombre, setNombre] = useState({});
+     const [nombre, setNombre] = useState("");
 
      const obtenerPersonajebyName = async () => { 
         const respuesta = await fetch(`https://rickandmortyapi.com/api/character/1,183`);
