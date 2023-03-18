@@ -20,8 +20,12 @@ function App() {
           <Navbar name={user.name}/>
           </>
           ) : (
-        
-           <Login />
+            <div>
+               <img src={imagen} className="img-fluid" alt=""/>
+                <div className="text-center">
+                    <Login />
+                </div>
+           </div>
         )}
     </div>
   )
