@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import Bienvenida from './Bienvenida'
 import ListaRickandMorty from './ListaRickandMorty'
 import Formulario from './Formulario'
+import Logout from './Logout'
+import Perfil from './Perfil'
 
 
 export default function Navbar(props) {
@@ -18,9 +20,24 @@ export default function Navbar(props) {
                         </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                          <Link to="/">Home</Link>
-                          <Link to="/ListaRickandMorty">Lista Rick and Morty</Link>
-                          <Link to="/Formulario">Formulario</Link>
+                        <ul className='navbar-nav'> 
+                            <li className='nav-item'>
+                                <Link to="/" className='nav-link'>Home</Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link to="/Formulario" className='nav-link'>Formulario</Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link to="/ListaRickandMorty" className='nav-link'>Lista Rick and Morty</Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link to="/perfil" className='nav-link'>Perfil del Usuario</Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Logout />
+                            </li>
+                        </ul>
+                          
                         </div>
                     </div>
                 </div>
@@ -29,6 +46,7 @@ export default function Navbar(props) {
             <Route path='/' element={<Bienvenida/>}/>
             <Route path='/ListaRickandMorty' element={<ListaRickandMorty/>}/>
             <Route path='/Formulario' element={<Formulario/>}/>
+            <Route path='/perfil' element={<Perfil />} />
         </Routes>
     </BrowserRouter>
     )
