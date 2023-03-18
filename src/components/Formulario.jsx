@@ -23,7 +23,7 @@ export default function Formulario() {
         e.preventDefault();
 
     }
-
+    
     //console.log(personaje);
 
   return (
