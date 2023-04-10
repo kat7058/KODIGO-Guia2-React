@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import imagen from './assets/rick-and-morty-top-banner.png'
 import { useAuth0 } from '@auth0/auth0-react'
 import Login from './components/Login';
+import Search from "./components/CharacterSearch";
 
 function App() {
   const { user, isAuthenticated } = useAuth0();
@@ -11,7 +12,8 @@ function App() {
 
   return (
     <div>
-
+      
+      
       {isAuthenticated ? (
           <>
           <header>
@@ -24,8 +26,11 @@ function App() {
                <img src={imagen} className="img-fluid" alt=""/>
                 <div className="text-center">
                     <Login />
+                    
                 </div>
            </div>
+           
+
         )}
     </div>
   )

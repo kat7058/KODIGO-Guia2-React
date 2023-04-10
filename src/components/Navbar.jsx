@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import Bienvenida from './Bienvenida'
 import ListaRickandMorty from './ListaRickandMorty'
-import Formulario from './Formulario'
+import Formulario from './CharacterSearch'
 import Logout from './Logout'
 import Perfil from './Perfil'
 
@@ -25,7 +25,7 @@ export default function Navbar(props) {
                                 <Link to="/" className='nav-link'>Home</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to="/Formulario" className='nav-link'>Formulario</Link>
+                                <Link to="/CharacterSearch" className='nav-link'>Formulario</Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to="/ListaRickandMorty" className='nav-link'>Lista Rick and Morty</Link>
@@ -45,7 +45,7 @@ export default function Navbar(props) {
         <Routes>
             <Route path='/' element={<Bienvenida/>}/>
             <Route path='/ListaRickandMorty' element={<ListaRickandMorty/>}/>
-            <Route path='/Formulario' element={<Formulario/>}/>
+            <Route path='/CharacterSearch' element={<Formulario/>}/>
             <Route path='/perfil' element={<Perfil />} />
         </Routes>
     </BrowserRouter>
