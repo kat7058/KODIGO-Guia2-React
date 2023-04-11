@@ -74,52 +74,6 @@ function App() {
   };
 };
 
-
-
-const Search = () => {
-  const [name, setName] = useState("");
-  const [results, setResults] = useState([]);
- 
-
-const handleChange = (event) => {
-    setName(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    axios
-      .get(`https://rickandmortyapi.com/api/character/?name=${name}`)
-      .then((response) => setResults(response.data.results))
-      .catch((error) => console.log(error));
- };
-
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Nombre del personaje:
-          <input type="text" value={name} onChange={handleChange} />
-       </label> <br/>
-        <br/>
-        <button className="btn btn-dark" type="submit">Buscar Personaje</button>
-      </form>
-      <br/>
-      <ul>
-        {results.map((result) => (
-          <li key={result.id}>
-           <img src={result.image} alt={`${result.name}`} />
-          <h3>{result.name}</h3> 
-           <p>{result.status}</p>
-           </li>
-        ))}
-      </ul>
-    </div>
-    
-    
- );
-
-  };
-
 export default App;
 
 
