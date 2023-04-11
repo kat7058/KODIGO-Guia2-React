@@ -8,6 +8,19 @@ export default function Bienvenida() {
 
 
 <div>
+  <br />
+  <h1 className="card-title text-center">
+    <br />
+    RICK & MORTY
+  </h1>
+  <br />
+  <h2  className="card-title text-center">Este proyecto es para poner en práctica todo lo aprendido sobre React, programación orientada a objetos y la utilización de JavaScript, librerías como axion o fetch entre otros.</h2>
+  <br />
+  <br />
+  <br />
+  <br />
+  <h3  className="card-title text-center" >COLABORADORES</h3>
+  <br />
 <div className="card mb-3 mt-4">
   <div className="row g-0">
     <div className="col-md-3">
@@ -15,8 +28,14 @@ export default function Bienvenida() {
     </div>
     <div className="col-md-5">
       <div className="card-body">
-        <h2 className="card-title text-center">Katerin Angel</h2>
-        <p className="card-text">Contribucion en el proyecto: Se encargo de crear el componente para la busqueda por nombre y filtrado por estado del personaje, tambien retoco la pagina agregando diseño.</p>
+        <h4 className="card-title text-center">Katerin Angel</h4>
+        <br />
+        <br />
+        <h8 className="card-title text-center">Nivel académico: 4° de Ingeniería en sistemas informáticos</h8>
+        <br />
+        <br />
+        <p className="card-text">Aportes:
+Creación de repositorio en GitHub, gestión de proyecto, implementación de Hooks(useState(), useEffect() y Fetch()), Programación del formulario para realizar búsquedas de personajes usando la librería axion y diseño.</p>
         <p className="card-text text-center"><small className="text-body-secondary"><strong>"Web developer"</strong></small></p>
       </div>
     </div>
@@ -30,8 +49,15 @@ export default function Bienvenida() {
     </div>
     <div className="col-md-5">
       <div className="card-body">
-        <h2 className="card-title text-center">Mauricio Esquivel</h2>
-        <p className="card-text">Contribucion en el proyecto: Se encargo de crear los componentes login, logout, navbar, perfil, tarjetas, la lista principal de los personajes y tambien darle un poco de diseño a la pagina. </p>
+        <h4 className="card-title text-center">Mauricio Esquivel</h4>
+        <br />
+        <br />
+        <h8 className="card-title text-center">Nivel académico: Bachillerato Técnico en Contabilidad</h8>
+        <br />
+        <br />
+        <p className="card-text">Aportes:
+Implementación de los componentes login, logout, navbar, perfil, tarjetas, la lista principal de los personajes utilizando useState
+, Eventos onchange, onsubmit y React Router, además de ser partícipe del diseño de la aplicación. </p>
         <p className="card-text text-center"><small className="text-body-secondary"><strong>"Web developer"</strong></small></p>
       </div>
     </div>
