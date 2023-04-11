@@ -31,7 +31,7 @@ export default function Bienvenida() {
     <div className="col-md-5">
       <div className="card-body">
         <h2 className="card-title text-center">Mauricio Esquivel</h2>
-        <p className="card-text">Contribucion en el proyecto: Se encargo de crear los componentes login, logout, navbar, perfil, tarjetas, la lista principal de los personajes y tampien darle un poco de diseño a la pagina. </p>
+        <p className="card-text">Contribucion en el proyecto: Se encargo de crear los componentes login, logout, navbar, perfil, tarjetas, la lista principal de los personajes y tambien darle un poco de diseño a la pagina. </p>
         <p className="card-text text-center"><small className="text-body-secondary"><strong>"Web developer"</strong></small></p>
       </div>
     </div>
